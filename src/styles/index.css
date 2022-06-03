@@ -1,12 +1,58 @@
 
-/* 
-
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
-
+/*
 */
+
+.container {
+    width: 600px;
+}
+
+h1{
+    color: hsl(357deg 32% 88%); /* color buscado con selector de color de la consola (en estilos, color, alt) */
+}
+
+/* LI dentro de la UL */
+ul li {
+    border-bottom : 1px solid grey;
+    list-style: none;
+    padding: 5px;
+}
+
+ul{padding: 0;
+margin-bottom: 0px;}
+
+h1 {text-align: center;}
+
+body {margin-top: 100px;}
+
+.form-control {
+    border: none;
+    padding-left: 0;
+}
+
+.fa-solid{opacity: 0;
+}
+
+.list-group-item:hover .fa-solid{opacity: 1;}
+
+.list-group-item{
+    margin-left: 0;
+    padding-left: 0;
+}
+
+span{
+    display: flex;
+    position: absolute; /* PUESTA POSICION ABSOLUTA PARA QUE SE MANTENGA SIEMPRE EN LA MISMA POSICION DEL LI*/
+    width: 85%;
+    justify-content: end;
+    font-size: 30px;
+    color: red;
+    top:5px;
+
+}
+
+#taskleft {
+    border-top: 1px solid lightgrey;
+    padding-top: 5px ;
+}
+
+
