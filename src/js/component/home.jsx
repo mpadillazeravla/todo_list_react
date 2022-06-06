@@ -33,8 +33,8 @@ const Home = () => {
 	// contador tareas pendientes//
 	let tasksleft =
 		lista.length == "0"
-			? "No tasks, add a task"
-			: lista.length + " item left";
+			? "Sin tareas, añade alguna tarea"
+			: lista.length + " tareas pendientes";
 
 	// el onSubmit ya hace que al hacer ENTER , capturemos el dato, no tenemos que hacer nada extraño como onkeypress ni nada de eso
 	return (
@@ -47,7 +47,7 @@ const Home = () => {
 							<input
 								className="form-control"
 								type="text"
-								placeholder="What needs to be done?"
+								placeholder="Añade una tarea"
 								aria-label="default input example"
 								onChange={handleEntrada}
 							/>
